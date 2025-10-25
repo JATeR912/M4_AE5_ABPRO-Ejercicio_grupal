@@ -54,7 +54,8 @@ Métodos principales:
 
 registrar(): Guarda la información de la bicicleta en un archivo de texto (bicicletas.txt), usando try/except/finally para manejar errores de archivo.
 
-disponible(): Indica si la bicicleta está disponible o reservada.```
+disponible(): Indica si la bicicleta está disponible o reservada.
+```
 
 Ejemplo de manejo de excepciones:
 
@@ -70,13 +71,13 @@ finally:
 ```
 Define la clase Reservas, encargada de:
 
-Crear reservas.
+*Crear reservas.
 
-Calcular el monto a pagar.
+**Calcular el monto a pagar.
 
-Procesar pagos y cancelaciones.
+*Procesar pagos y cancelaciones.
 
-Incluye manejo de errores con try/except, raise y excepciones personalizadas.
+*Incluye manejo de errores con try/except, raise y excepciones personalizadas.
 
 Ejemplo de flujo principal:
 
@@ -125,13 +126,13 @@ from datetime import datetime
 ```
 Flujo del programa:
 
-Se crean bicicletas y se almacenan en una lista inventario_bicicletas.
+*Se crean bicicletas y se almacenan en una lista inventario_bicicletas.
 
-Se definen fechas de inicio y fin para las reservas.
+*Se definen fechas de inicio y fin para las reservas.
 
-Se instancian objetos Reservas asociados a bicicletas.
+*Se instancian objetos Reservas asociados a bicicletas.
 
-Se ejecutan los métodos principales:
+*Se ejecutan los métodos principales:
 
 ```bash
 
