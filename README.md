@@ -23,7 +23,7 @@ El sistema aplica principios de **Programación Orientada a Objetos (POO)** y un
 
 ```bash
 
-📁 BIKECITY/
+📁 /
 │
 ├── main.py # Archivo principal del sistema (ejecución general)
 ├── bicicletas.py # Clase Bicicleta y funciones de registro y disponibilidad
@@ -71,13 +71,13 @@ finally:
 ```
 Define la clase Reservas, encargada de:
 
-*Crear reservas.
+* Crear reservas.
 
-**Calcular el monto a pagar.
+* Calcular el monto a pagar.
 
-*Procesar pagos y cancelaciones.
+* Procesar pagos y cancelaciones.
 
-*Incluye manejo de errores con try/except, raise y excepciones personalizadas.
+* Incluye manejo de errores con try/except, raise y excepciones personalizadas.
 
 Ejemplo de flujo principal:
 
@@ -126,13 +126,13 @@ from datetime import datetime
 ```
 Flujo del programa:
 
-*Se crean bicicletas y se almacenan en una lista inventario_bicicletas.
+* Se crean bicicletas y se almacenan en una lista inventario_bicicletas.
 
-*Se definen fechas de inicio y fin para las reservas.
+* Se definen fechas de inicio y fin para las reservas.
 
-*Se instancian objetos Reservas asociados a bicicletas.
+* Se instancian objetos Reservas asociados a bicicletas.
 
-*Se ejecutan los métodos principales:
+* Se ejecutan los métodos principales:
 
 ```bash
 
@@ -173,10 +173,10 @@ Observa los mensajes de validación, errores controlados y confirmaciones.
 
 Proyecto desarrollado por:
 
-*Linwi Vargas([Linwi-V](https://github.com/Linwi-V))
+* Linwi Vargas([Linwi-V](https://github.com/Linwi-V))
 
-*Emily Quintana([EmyQuintana](https://github.com/EmyQuintana))
+* Emily Quintana([EmyQuintana](https://github.com/EmyQuintana))
 
-*Natalia Rodriguez([npuntorodriguez](https://github.com/npuntorodriguez))
+* Natalia Rodriguez([npuntorodriguez](https://github.com/npuntorodriguez))
 
-*Johana Torres([JATeR912](https://github.com/JATeR912))
+* Johana Torres([JATeR912](https://github.com/JATeR912))
