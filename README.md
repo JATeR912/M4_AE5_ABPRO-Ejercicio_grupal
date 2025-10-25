@@ -120,6 +120,7 @@ pago(): Simula un pago exitoso y libera la bicicleta.
 cancelar_reserva(): Permite cancelar una reserva activa.
 
 ### ⚠️ `error.py`
+
 Contiene las excepciones personalizadas del sistema.
 
 python
@@ -131,6 +132,7 @@ class FormatoRutInvalido(Exception):
 Estas excepciones permiten distinguir errores específicos del negocio de los errores genéricos del sistema.
 
 ### 🚀 `main.py`
+
 Archivo principal que crea instancias, simula reservas y ejecuta el sistema completo:
 
 python
@@ -167,6 +169,7 @@ reserva1.cancelar_reserva()
 
 
 ### 🧪 `Ejecución del Proyecto`
+
 Clona o descarga el repositorio.
 
 Abre una terminal en la carpeta del proyecto.
@@ -181,6 +184,7 @@ Sigue las instrucciones del sistema (ingresar RUT, fechas, etc.).
 Observa los mensajes de validación, errores controlados y confirmaciones.
 
 ### 👨‍💻 `Colaboradores`
+
 Proyecto desarrollado por:
 
 *Linwi Vargas([Linwi-V](https://github.com/Linwi-V))
