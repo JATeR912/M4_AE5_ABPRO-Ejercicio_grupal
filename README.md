@@ -21,6 +21,8 @@ El sistema aplica principios de **Programación Orientada a Objetos (POO)** y un
 
 ## 🧩 Estructura del Proyecto
 
+```bash
+
 📁 BIKECITY/
 │
 ├── main.py # Archivo principal del sistema (ejecución general)
@@ -32,34 +34,15 @@ El sistema aplica principios de **Programación Orientada a Objetos (POO)** y un
 ├── respuestas.pdf # Documento teórico con respuestas sobre manejo de excepciones
 │
 └── README.md # Este archivo
+```
 
-yaml
-Copiar código
-
----
-
-## 🧠 Paso 1: Conceptualización y Análisis
-
-El documento **respuestas.pdf** incluye las respuestas a los temas teóricos solicitados:
-
-1. ¿Qué es una excepción y por qué es importante manejarla?  
-2. Tipos comunes de excepciones.  
-3. Uso del bloque `try/except`.  
-4. Captura de múltiples excepciones.  
-5. Uso de `raise` para generar errores personalizados.  
-6. Creación de excepciones propias.  
-7. Función del bloque `finally`.  
-8. Acciones de limpieza después de errores.  
-
----
-
-## 💻 Paso 2: Implementación en Código
 
 ### 🏍️ `bicicletas.py`
 
 Define la clase **`Bicicleta`**, con los siguientes atributos y métodos:
 
-```python
+```bash
+
 class Bicicleta:
     def __init__(self, id_bicicleta, marca, modelo, disponibilidad, precio):
         self.id_bicicleta = id_bicicleta
@@ -71,12 +54,11 @@ Métodos principales:
 
 registrar(): Guarda la información de la bicicleta en un archivo de texto (bicicletas.txt), usando try/except/finally para manejar errores de archivo.
 
-disponible(): Indica si la bicicleta está disponible o reservada.
+disponible(): Indica si la bicicleta está disponible o reservada.```
 
 Ejemplo de manejo de excepciones:
 
-python
-Copiar código
+```bash
 try:
     archivo = open("bicicletas.txt", "a")
     archivo.write(...)
@@ -85,6 +67,7 @@ except FileNotFoundError:
 finally:
     archivo.close()
 📅 reservas.py
+```
 Define la clase Reservas, encargada de:
 
 Crear reservas.
@@ -97,8 +80,7 @@ Incluye manejo de errores con try/except, raise y excepciones personalizadas.
 
 Ejemplo de flujo principal:
 
-python
-Copiar código
+```bash
 def reserva(self):
     try:
         cliente = input("Ingrese su rut (sin puntos ni guión): ")
@@ -118,28 +100,29 @@ monto_pagar(): Calcula el monto total según horas de uso.
 pago(): Simula un pago exitoso y libera la bicicleta.
 
 cancelar_reserva(): Permite cancelar una reserva activa.
+```
 
 ### ⚠️ `error.py`
 
 Contiene las excepciones personalizadas del sistema.
 
-python
-Copiar código
+```bash
 class FormatoRutInvalido(Exception):
     """Excepción lanzada cuando el RUT no cumple el formato esperado."""
     def __init__(self, rut):
         super().__init__(f"El RUT '{rut}' no tiene un formato válido (debe tener 9 caracteres).")
+```
 Estas excepciones permiten distinguir errores específicos del negocio de los errores genéricos del sistema.
 
 ### 🚀 `main.py`
 
 Archivo principal que crea instancias, simula reservas y ejecuta el sistema completo:
 
-python
-Copiar código
+```bash
 from bicicletas import Bicicleta
 from reservas import Reservas    
 from datetime import datetime
+```
 Flujo del programa:
 
 Se crean bicicletas y se almacenan en una lista inventario_bicicletas.
@@ -150,6 +133,8 @@ Se instancian objetos Reservas asociados a bicicletas.
 
 Se ejecutan los métodos principales:
 
+```bash
+
 reserva()
 
 monto_pagar()
@@ -157,16 +142,16 @@ monto_pagar()
 pago()
 
 cancelar_reserva()
+```
 
 Ejemplo de uso:
 
-python
-Copiar código
+```bash
 reserva1.reserva()
 reserva1.monto_pagar()
 reserva1.pago()
 reserva1.cancelar_reserva()
-
+```
 
 ### 🧪 `Ejecución del Proyecto`
 
@@ -176,9 +161,9 @@ Abre una terminal en la carpeta del proyecto.
 
 Ejecuta el programa principal:
 
-bash
-Copiar código
+```bash
 python main.py
+```
 Sigue las instrucciones del sistema (ingresar RUT, fechas, etc.).
 
 Observa los mensajes de validación, errores controlados y confirmaciones.
